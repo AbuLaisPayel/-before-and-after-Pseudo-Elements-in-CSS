@@ -1,0 +1,231 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+}
+body{
+  background-color: rgb(233, 183, 109);
+}
+.container_card{
+  max-width: 1270px;
+  background-color: rgb(66, 64, 64);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  
+}
+.header{
+ padding-top: 40px;
+}
+.header h1{
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 4;
+  line-height: 45px;
+  font-size: 40px;
+}
+.header img {
+  display: block;
+  text-align: center;
+  width: 300px;
+  height: auto;
+  background-color: rgb(224, 11, 11);
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.row1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.col1{
+  margin: 50px 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.col1 i{
+  background-color: rgb(19, 125, 66);
+  padding: 15px;
+  border-radius: 50%;
+  color: blanchedalmond;
+}
+.col1 h4{
+  font-weight: bolder;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: rgb(150, 94, 10);
+}
+.col1 p{
+  background-color: rgb(5, 77, 77);
+  padding: 5px 15px;
+  border-radius: 5%;
+  color: blanchedalmond;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.col1::before{
+  content: "";
+  border-radius: 5px;
+  background-color: rgb(247, 123, 123);
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  z-index: -1;
+}
+.col1::after{
+  content: "";
+  border-radius: 5px;
+  background-color: rgb(247, 123, 123);
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  bottom: -15px;
+  right:  -15px;
+  z-index: -1;
+}
+.button_1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6;
+}
+.button_1 a{
+  position: absolute;
+  bottom: 80px;
+  background-color: rgb(8, 43, 43);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+}
+.button_1 a::before{
+  content: "";
+  position: absolute;
+  background-color: rgb(238, 5, 5);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-90%);
+  transition: 0.7s all ease;
+  z-index: -1;
+}
+.button_1 a:hover::before{
+  transform: translate(0%);
+}
+.button_1 a:hover{
+  color: white;
+}
+footer{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.f_container{
+  padding: 20px 0px;
+  max-width: 1270px;
+  display: flex;
+  justify-content: space-between;
+}
+.copy{
+  font-size: 1.1rem;
+  color: white;
+}
+.deve{
+  font-size: 1.1rem;
+  color: white;
+}
+@media only screen and (max-width: 951px) {
+  .row1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  .header img {
+    background-color: rgb(20, 67, 108);
+  }
+  .header h1{
+    color: rgb(233, 94, 56);
+  }
+  
+  .col1{
+    margin: 50px 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .button_1 a{
+    position: absolute;
+    bottom: 50px;
+    background-color: rgb(8, 43, 43);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+  footer{
+    background-color: rgba(4, 63, 93, 0.8);
+  }
+  .f_container{
+    padding: 20px 0px;
+    max-width: 1270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
